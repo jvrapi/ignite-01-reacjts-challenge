@@ -1,0 +1,49 @@
+.todosInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: bold;
+}
+
+.todosCount {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.todosCount > p {
+  font-size: 0.875rem;
+  color: var(--blue);
+}
+
+.todosCount > span {
+  color: var(--gray-200);
+  background: var(--gray-400);
+  width: 1.5rem;
+  height: 1.188rem;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 0.75rem;
+  padding: 0.125rem 0.5rem;
+}
+
+.todosFinishedCount {
+  display: flex;
+  gap: 0.5rem;
+  width: 8.625rem;
+}
+
+.todosFinishedCount > p {
+  color: var(--purple);
+  font-size: 0.875rem;
+}
+
+.todosFinishedCount > div {
+  color: var(--gray-200);
+  background: var(--gray-400);
+  height: 1.188rem;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 0.75rem;
+  padding: 0.125rem 0.5rem;
+}

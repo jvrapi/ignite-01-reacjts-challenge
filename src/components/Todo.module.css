@@ -1,0 +1,102 @@
+.card {
+  background-color: var(--gray-500);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.todoFinished {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 46rem;
+  height: 4.5rem;
+  text-align: start;
+}
+
+.todoUnfinished {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 46rem;
+  height: 4.5rem;
+  text-align: start;
+}
+
+.todoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.todoWrapper p {
+  max-width: 39.5rem;
+  font-size: 0.875rem;
+}
+
+.todoWrapper button {
+  cursor: pointer;
+}
+
+.todoFinished > .todoWrapper > p {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.todoFinished > .todoWrapper > button {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: var(--purple-dark);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-100);
+  transition: background-color 0.1s;
+  border: none;
+}
+
+.todoFinished > .todoWrapper > button:hover {
+  background-color: var(--purple);
+}
+
+.todoUnfinished > .todoWrapper > button {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 12px;
+  border: 3px solid var(--blue);
+  transition: background-color 0.1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todoUnfinished > .todoWrapper > button:hover {
+  background-color: var(--blue-dark);
+}
+
+.deleteTodo {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.5rem;
+  width: 1.5rem;
+  transition: background-color 0.1s;
+  border: none;
+  background-color: transparent;
+}
+
+.deleteTodo:hover {
+  background-color: var(--gray-400);
+  border-radius: 4px;
+}
+
+.deleteTodo svg {
+  color: var(--gray-300);
+  transition: color 0.1s;
+}
+
+.deleteTodo svg:hover {
+  color: var(--danger);
+}
